@@ -1,9 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="/static/style.css">
-    <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Best Cars Dealership</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    .contact-page { max-width: 820px; margin: 40px auto; padding: 0 16px; }
+    .contact-page h1 { font-weight: 700; }
+    .contact-page .lead { color: #616e7c; margin-bottom: 28px; }
+    .contact-main { display: flex; flex-wrap: wrap; gap: 8px 40px; margin-bottom: 36px; }
+    .contact-main p { margin: 0; display: flex; align-items: center; gap: 6px; }
+    .contact-header { display: flex; align-items: center; gap: 16px; }
+    .contact-header img { width: 64px; height: 64px; }
+    .icon { width: 18px; height: 18px; color: #0e8f91; flex-shrink: 0; }
+    .contact-page h2 { font-size: 1.25rem; font-weight: 600; margin-bottom: 12px; }
+    .contact-page a { color: #0e8f91; text-decoration: none; }
+    .contact-page a:hover { text-decoration: underline; }
+    .contact-table td, .contact-table th { padding: 10px 8px; vertical-align: top; }
+    .contact-table .role { display: block; color: #616e7c; font-size: .9rem; }
+  </style>
 </head>
-<div>
+<body>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
     <div class="container-fluid">
       <h2 style="padding-right: 5%;">Dealerships</h2>
@@ -13,29 +32,83 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            <a class="nav-link" style="font-size: larger;" href="/">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+            <a class="nav-link active" style="font-size: larger;" aria-current="page" href="/contact">Contact Us</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-<div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-    <div class="banner" name="about-header">
+  <main class="contact-page">
+    <div class="contact-header">
+      <img src="/static/contactus.png" alt="">
+      <div>
         <h1>Contact Us</h1>
-        <p>Contact us through our official communication channels.</p>
+        <p class="lead mb-0">Contact us through our official communication channels.</p>
+      </div>
     </div>
-        <div style="display: flex;flex-direction: row; margin:auto">
 
-        <div class="card-body">
-            <p>Phone number: +1 234 567 890</p>
-            <p>Email: email@example.com</p>
-        </div>
+    <div class="contact-main mt-4">
+      <p>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        <strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a>
+      </p>
+      <p>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+        <strong>Email:</strong> <a href="mailto:info@bestcars.example.com">info@bestcars.example.com</a>
+      </p>
+      <p>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <strong>Hours:</strong> Mon–Fri 9:00–19:00, Sat 10:00–16:00
+      </p>
     </div>
+
+    <h2>Departments</h2>
+    <div class="table-responsive">
+      <table class="table contact-table">
+        <thead>
+          <tr><th>Department</th><th>Phone</th><th>Email</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sales<span class="role">James Carter</span></td>
+            <td><a href="tel:+1234567801">+1 234 567 801</a></td>
+            <td><a href="mailto:sales@bestcars.example.com">sales@bestcars.example.com</a></td>
+          </tr>
+          <tr>
+            <td>Service &amp; Repairs<span class="role">Sofia Kim</span></td>
+            <td><a href="tel:+1234567802">+1 234 567 802</a></td>
+            <td><a href="mailto:service@bestcars.example.com">service@bestcars.example.com</a></td>
+          </tr>
+          <tr>
+            <td>Financing<span class="role">Daniel Okafor</span></td>
+            <td><a href="tel:+1234567803">+1 234 567 803</a></td>
+            <td><a href="mailto:finance@bestcars.example.com">finance@bestcars.example.com</a></td>
+          </tr>
+          <tr>
+            <td>Parts<span class="role">Arjun Nair</span></td>
+            <td><a href="tel:+1234567804">+1 234 567 804</a></td>
+            <td><a href="mailto:parts@bestcars.example.com">parts@bestcars.example.com</a></td>
+          </tr>
+          <tr>
+            <td>Customer Care<span class="role">Laura Rossi</span></td>
+            <td><a href="tel:+1234567805">+1 234 567 805</a></td>
+            <td><a href="mailto:care@bestcars.example.com">care@bestcars.example.com</a></td>
+          </tr>
+          <tr>
+            <td>Management<span class="role">Emma Martinez</span></td>
+            <td><a href="tel:+1234567806">+1 234 567 806</a></td>
+            <td><a href="mailto:management@bestcars.example.com">management@bestcars.example.com</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
 </html>
